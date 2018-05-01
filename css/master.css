@@ -1,0 +1,9 @@
+body {
+  background: white;
+}
+
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
