@@ -9,12 +9,12 @@ let dataStream = []
 let speedConstant = 500
 let maxPop = 0
 let minPop = 0
-let numYears = 80
+let numYears = 70
 let volatile = 2000
 let offset = 300
 let country = "Australia"
 let color = 50
-let bgTotal = `rgb(0, ${color}, ${color})`
+let bgTotal = `rgb(100, ${color}, ${color})`
 let bdTotal = "red solid 2px"
 
 
@@ -137,8 +137,10 @@ $(document).ready( () => {
     offset = +($('#offset').val());
     console.log( country );
     getPopulation(country)
+
+    bgTotal = `rgb(100, ${color}, ${color})`
+
     color = color + 40
-    bgTotal = `rgb(0, ${color}, ${color})`
   })
 
 
