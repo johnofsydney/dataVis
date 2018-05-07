@@ -29,7 +29,6 @@ const addData = (results) => {
   let tempArr = []
   dataStream = results
 
-  
   $.each(dataStream, function( index, value ) {
     tempArr.push(value.total)
   })
