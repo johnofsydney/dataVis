@@ -1,9 +1,56 @@
 body {
   background: white;
+  font-family: sans-serif;
 }
 
 
 .bubble {
   position: absolute;
   border-radius: 50%;
+  z-index: -1;
+}
+
+.vertical-line {
+  position: absolute;
+  border-left: red solid 1px;
+  height: 100vh;
+  bottom: 0;
+  display: none;
+}
+.info {
+  position: absolute;
+  width: 300px;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  bottom: 1rem;
+}
+
+/* .info.wwi {
+  bottom: 10px;
+}
+.info.nineteen30 {
+  bottom: 150px;
+}
+.info.nineteen50 {
+  bottom: 300px;
+} */
+
+.information {
+  width: 50rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+#updating {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
