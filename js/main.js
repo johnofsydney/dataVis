@@ -15,7 +15,7 @@ let bdTotal = "red solid 2px"
 // 2 - then save it using addData()
 // 3 - then plot it using plotData()
 const getPopulation = (country) => {
-  const BASE_URL = "https://api.population.io:80/1.0/population/"
+  const BASE_URL = "http://api.population.io:80/1.0/population/"
   const POP_URL = BASE_URL + country + "/60"
   $.getJSON(POP_URL).then( addData ).then(plotData);
 }
@@ -106,7 +106,6 @@ const plotSingleData = (i) => {
     });
   }
 
-  console.log(i);
   if (i >= numYears) {
     $('#updating').fadeOut(5000);
 
