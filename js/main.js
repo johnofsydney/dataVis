@@ -57,7 +57,7 @@ const plotSingleData = (i) => {
   // (total / first) * (window.innerHeight / 4) is the bit that varies (with total)
   // all countries will statrt at the same point as the first point total == first
   // after that total will increase relative to first (for all countries I've checked)
-  let yTotal = 1.1 * window.innerHeight - ( (total / first) * (window.innerHeight / 4)  )
+  let yTotal = 1 * window.innerHeight - ( (total / first) * (window.innerHeight / 4)  )
 
 
 
