@@ -54,3 +54,31 @@ body {
   right: 20px;
   top: 20px;
 }
+
+
+
+#mobile {
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../images/mob-bkgnd.png");
+    background-size: cover;
+
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+}

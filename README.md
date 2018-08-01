@@ -7,3 +7,5 @@ This page shows population over time. I've chosen to use the number of 60 year o
 The size of the bubbles is proportional to population. The x axis is linear time and covers the last 70 years. The y axis shows the change over time relative to the starting population.
 
 https://johnofsydney.github.io/dataVis/
+
+desktop only 

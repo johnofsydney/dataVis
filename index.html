@@ -11,36 +11,50 @@
   <title>Document</title>
 </head>
 <body>
-  <input id="country" type="text" value="Australia"></input>
-  <button id="btnStart">Click to start</button>
-  <div class="information" id="updating">
-    <div id="year"></div>
-    <div id="born"></div>
-    <div id="twentyfive"></div>
-  </div>
-  <div id="list"></div>
+
+  <div id="desktop">
+    <input id="country" type="text" value="Australia"></input>
+    <button id="btnStart">Click to start</button>
+    <div class="information" id="updating">
+      <div id="year"></div>
+      <div id="born"></div>
+      <div id="twentyfive"></div>
+    </div>
+    <div id="list"></div>
 
 
-  <div class="information" id="intro">
-    <p>This page shows population over time. I've chosen to use the number of 60 year olds as there is sufficient data available from api.population.io to see the effects of WW2 and the depression on the population.</p>
-    <p>The size of the bubbles is proportional to population. The x axis is linear time and covers the last 70 years. The y axis shows the change over time relative to the starting population.</p>
-    <p>Click the button above to start, try as many countries as you like, you might have to check <a href="http://population.io">population.io</a> for accurate country names.</p>
-    <p>It takes a few seconds to get the data becuase we have to use the cors-anywhere service to allow the api which is served over http to work with this https github page.</p>
+    <div class="information" id="intro">
+      <p>This page shows population over time. I've chosen to use the number of 60 year olds as there is sufficient data available from api.population.io to see the effects of WW2 and the depression on the population.</p>
+      <p>The size of the bubbles is proportional to population. The x axis is linear time and covers the last 70 years. The y axis shows the change over time relative to the starting population.</p>
+      <p>Click the button above to start, try as many countries as you like, you might have to check <a href="http://population.io">population.io</a> for accurate country names.</p>
+      <p>It takes a few seconds to get the data becuase we have to use the cors-anywhere service to allow the api which is served over http to work with this https github page.</p>
+    </div>
+
+
+    <div class="vertical-line nineteen30" id=""></div>
+    <div class="vertical-line wwi" id=""></div>
+    <div class="vertical-line nineteen50" id=""></div>
+
+    <div class="info nineteen30" id="">
+      <p>This dip shows the number of 60 year olds in 1993. The dip is caused by all the children that weren't born in the depression.</p>
+    </div>
+    <div class="info wwi" id="">
+      <p>This dip shows the number of 60 year olds in 1976. The dip is caused by the children that were not born to their contemporaries who died young and childless in WW1, and also to those contemporaries who themselves died in WW2</p>
+    </div>
+    <div class="info nineteen50" id="">
+      <p>This uptick shows the number of 60 year olds in 2010, corresponding to the post WW2 babyboom (less obvious in migrant countries)</p>
+    </div>
+
+  </div>
+
+  <div id="mobile">
+    <h2>This site for desktop only</h2>
+    <p>It just needs the larger screen size to do it's thing.</p>
+    <h3><code>¯\_(ツ)_/¯</code></h3>
   </div>
 
 
-  <div class="vertical-line nineteen30" id=""></div>
-  <div class="vertical-line wwi" id=""></div>
-  <div class="vertical-line nineteen50" id=""></div>
 
-  <div class="info nineteen30" id="">
-    <p>This dip shows the number of 60 year olds in 1993. The dip is caused by all the children that weren't born in the depression.</p>
-  </div>
-  <div class="info wwi" id="">
-    <p>This dip shows the number of 60 year olds in 1976. The dip is caused by the children that were not born to their contemporaries who died young and childless in WW1, and also to those contemporaries who themselves died in WW2</p>
-  </div>
-  <div class="info nineteen50" id="">
-    <p>This uptick shows the number of 60 year olds in 2010, corresponding to the post WW2 babyboom (less obvious in migrant countries)</p>
-  </div>
+
 </body>
 </html>
