@@ -1,9 +1,12 @@
 body {
   background: white;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-
+#desktop {
+  margin: 1rem;
+}
 .bubble {
   position: absolute;
   border-radius: 50%;
@@ -15,6 +18,14 @@ body {
   border-left: red solid 1px;
   height: 100vh;
   bottom: 0;
+  display: none;
+}
+
+.horizontal-line {
+  position: absolute;
+  border-top: red dashed 1px;
+  width: 100vw;
+  left: 0;
   display: none;
 }
 .info {
@@ -29,18 +40,18 @@ body {
   bottom: 1rem;
 }
 
-/* .info.wwi {
-  bottom: 10px;
+a {
+  text-decoration: none;
 }
-.info.nineteen30 {
-  bottom: 150px;
+
+
+ul {
+  /* list-style:none; */
+  padding: 1rem;
 }
-.info.nineteen50 {
-  bottom: 300px;
-} */
+
 
 .information {
-  width: 50rem;
   background-color: rgba(0,0,0,0.5);
   padding: 1rem;
   margin: 1rem;
@@ -48,14 +59,25 @@ body {
   color: white;
 }
 
+#intro {
+  width: 50rem;
+}
+
 #updating {
+  width: 40rem;
   display: none;
   position: absolute;
   right: 20px;
   top: 20px;
 }
 
-
+#countries {
+  display: none;
+  width: 25rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
 
 #mobile {
   display: none;
